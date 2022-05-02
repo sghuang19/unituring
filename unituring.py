@@ -96,8 +96,8 @@ class UTM:
     pass
 
     def display(self):
-        # width, _ = os.get_terminal_size()
-        width = 80  # for debug only
+        width, _ = os.get_terminal_size()
+        # width = 80  # for debug only
         print(f"Current state: {self.state}")
         print(f"Tape head: {self.head}")
         half = (width - 1) // 5 // 2 - 1
