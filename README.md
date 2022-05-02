@@ -99,14 +99,16 @@ Run the following command to see this demo in action:
 ./unituring.py -a -t 2123.txt
 ```
 
-## Todos
+## To-dos
 
 - [x] Load input tape, trace back the transition rules and do the executions.
 
 - [x] Visualizing the machine in action.
 
+- [x] Support `-s` option.
+
 - [ ] Verbose mode
-  Enbale verbose mode with `-v` option, in which the steps for matching transition rules will be displayed as well.
+  Enable verbose mode with `-v` option, in which the steps for matching transition rules will be displayed as well.
 
 - [ ] Manual mode
   Enable manual mode with `-a` option not specified, in which `unituring` will run for a single step whenever a keystroke is detected.
@@ -119,4 +121,6 @@ Run the following command to see this demo in action:
 
 - [ ] Re-design the states interpretation of `unituring` instead of simply using tuples.
 
-We could use a fixed-lengthed binary number as state. With certain portion of the state representing different elements. For example, first 2 bits for internal state (i.e., initial, matching rules, going right to resume exectution, etc.) and the following 4 bits for current state, 4 bits for current symbols, 1 bit for tape movement, and so on.
+We could use a fixed-length binary number as state. With certain portion of the state representing different elements. For example, first 2 bits for internal state (i.e., initial, matching rules, going right to resume execution, etc.) and the following 4 bits for current state, 4 bits for current symbols, 1 bit for tape movement, and so on.
+
+I could have write a 2-tape machine at the very start, this would make the project much easier.
