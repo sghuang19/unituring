@@ -172,7 +172,7 @@ def main():
             elif argument == '-d':
                 delimiter = arguments.pop(0)
             elif argument == '-s':
-                step = arguments.pop(0)
+                step = int(arguments.pop(0))
             elif argument == '-t':
                 tape = load_tape(arguments.pop(0), delim=delimiter)
             elif argument == '-v':
