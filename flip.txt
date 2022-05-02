@@ -1,0 +1,14 @@
+# Unituring test tape
+# Lines begin with `#` will be interpreted as comments
+# Default delimeter is white space
+# Transitions and inputs should be separated by `$`
+# Transitions are specified as
+#
+# Current State --> Current Symbol --> Tape Head Movement -->
+# Symbol to Write --> Next State
+
+# Here's a simple example that simply scans through the tape and do nothing
+0 0 R 1 0
+0 1 R 0 0
+$
+1 1 0 0 1 0 1 1 1 1 1 1 0 0 0 0 0

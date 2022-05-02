@@ -77,7 +77,6 @@ class UTM:
             self.head += 1
         self.state = self.state[2]
 
-
     def run(self, auto=False, step=1):
         self.init()
         print("Tape head initialized")
